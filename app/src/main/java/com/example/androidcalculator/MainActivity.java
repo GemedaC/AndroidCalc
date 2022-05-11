@@ -11,6 +11,8 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    private CalculatorLogic calculator;
+    private TextView answer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,10 +23,10 @@ public class MainActivity extends AppCompatActivity {
         // Подключили логику
         //
 
-        CalculatorLogic calculator;
+
 
         //
-        // Создание массивов с id чисел и арифм. операций (кроме равно)
+        // Создание массивов с id чисел и арифм. операций
         //
 
         int[] numberId = new int[]{
@@ -42,12 +44,21 @@ public class MainActivity extends AppCompatActivity {
         };
 
         int[] actionId = new int[]{
+                R.id.AC,
+                R.id.signChange,
                 R.id.division100,
                 R.id.division,
                 R.id.multiply,
                 R.id.minus,
                 R.id.plus,
+                R.id.equals
         };
+
+        //
+        // Инициализация вывода ответа
+        //
+
+        answer = findViewById(R.id.answer);
 
         //
         // Объявили новый объект класса логики
@@ -64,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 calculator.onNumberPressed(v.getId());
+                answer.setText(calculator.getText());
             }
         };
 

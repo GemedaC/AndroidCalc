@@ -122,15 +122,15 @@
 
     <Button
         android:id="@+id/equals"
-        android:layout_below="@+id/plus"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5sp"
+        android:layout_below="@+id/plus"
         android:layout_marginLeft="315sp"
+        android:layout_marginTop="5sp"
         android:layout_marginRight="20sp"
-        android:textSize="30sp"
+        android:text="="
         android:textColor="@color/orange"
-        android:text="=" />
+        android:textSize="30sp" />
 
     //
     // Числа 1-й столбец слева
