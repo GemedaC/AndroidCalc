@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    //
+    // Поле ответа
+    //
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="200sp"
+        android:layout_marginRight="20sp"
+        android:text="2222"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/white"
+        android:textSize="80sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    //
+    // Кнопки очистки, смены знака, получения процентов
+    //
+
+    <Button
+        android:id="@+id/AC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/answer"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="310sp"
+        android:text="AC"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/signChange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/answer"
+        android:layout_marginLeft="115sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="210sp"
+        android:text="+/-"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/divide100"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/answer"
+        android:layout_marginLeft="215sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="110sp"
+        android:text="%"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+
+    //
+    // Арифм. операции
+    //
+
+    <Button
+        android:id="@+id/divide"
+        android:layout_below="@+id/answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="315sp"
+        android:layout_marginRight="20sp"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:text="/" />
+
+    <Button
+        android:id="@+id/multiply"
+        android:layout_below="@+id/divide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:layout_marginLeft="315sp"
+        android:layout_marginRight="20sp"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:text="*" />
+
+    <Button
+        android:id="@+id/minus"
+        android:layout_below="@+id/multiply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:layout_marginLeft="315sp"
+        android:layout_marginRight="20sp"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_below="@+id/minus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:layout_marginLeft="315sp"
+        android:layout_marginRight="20sp"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/equals"
+        android:layout_below="@+id/plus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:layout_marginLeft="315sp"
+        android:layout_marginRight="20sp"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:text="=" />
+
+    //
+    // Числа 1-й столбец слева
+    //
+
+    <Button
+        android:id="@+id/seven"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AC"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="5sp"
+        android:layout_marginRight="310sp"
+        android:text="7"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/four"
+        android:layout_below="@+id/seven"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="310sp"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:text="4" />
+
+    <Button
+        android:id="@+id/one"
+        android:layout_below="@+id/four"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="310sp"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:text="1" />
+
+    <Button
+        android:id="@+id/nul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/one"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="5sp"
+        android:layout_marginRight="210sp"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    //
+    // Числа 2-й столбец слева
+    //
+
+    <Button
+        android:id="@+id/eight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signChange"
+        android:layout_marginLeft="115sp"
+        android:layout_marginTop="5sp"
+        android:layout_marginRight="210sp"
+        android:text="8"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/five"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eight"
+        android:layout_marginLeft="115sp"
+        android:layout_marginTop="5sp"
+        android:layout_marginRight="210sp"
+        android:text="5"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/five"
+        android:layout_marginLeft="115sp"
+        android:layout_marginTop="5sp"
+        android:layout_marginRight="210sp"
+        android:text="2"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    //
+    // Числа 3-й столбец слева
+    //
+
+    <Button
+        android:id="@+id/nine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divide100"
+        android:layout_marginLeft="215sp"
+        android:layout_marginTop="5sp"
+        android:layout_marginRight="110sp"
+        android:text="9"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/six"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nine"
+        android:layout_marginLeft="215sp"
+        android:layout_marginTop="5sp"
+        android:layout_marginRight="110sp"
+        android:text="6"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/six"
+        android:layout_marginLeft="215sp"
+        android:layout_marginTop="5sp"
+        android:layout_marginRight="110sp"
+        android:text="3"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/comma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/three"
+        android:layout_marginLeft="215sp"
+        android:layout_marginTop="5sp"
+        android:layout_marginRight="110sp"
+        android:text=","
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+</RelativeLayout>
