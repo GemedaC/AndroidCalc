@@ -56,7 +56,7 @@
         android:textSize="30sp" />
 
     <Button
-        android:id="@+id/divide100"
+        android:id="@+id/division100"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/answer"
@@ -73,7 +73,7 @@
     //
 
     <Button
-        android:id="@+id/divide"
+        android:id="@+id/division"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/answer"
@@ -88,7 +88,7 @@
         android:id="@+id/multiply"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/divide"
+        android:layout_below="@+id/division"
         android:layout_marginLeft="315sp"
         android:layout_marginTop="5sp"
         android:layout_marginRight="20sp"
@@ -173,7 +173,7 @@
         android:text="1" />
 
     <Button
-        android:id="@+id/nul"
+        android:id="@+id/zero"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/one"
@@ -232,7 +232,7 @@
         android:id="@+id/nine"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/divide100"
+        android:layout_below="@+id/division100"
         android:layout_marginLeft="215sp"
         android:layout_marginTop="5sp"
         android:layout_marginRight="110sp"
