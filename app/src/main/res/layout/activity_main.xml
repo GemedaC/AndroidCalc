@@ -18,7 +18,7 @@
         android:layout_marginLeft="20sp"
         android:layout_marginTop="200sp"
         android:layout_marginRight="20sp"
-        android:text="2222"
+        android:text="0"
         android:textAlignment="viewEnd"
         android:textColor="@color/white"
         android:textSize="80sp"
@@ -74,27 +74,27 @@
 
     <Button
         android:id="@+id/divide"
-        android:layout_below="@+id/answer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20sp"
+        android:layout_below="@+id/answer"
         android:layout_marginLeft="315sp"
+        android:layout_marginTop="20sp"
         android:layout_marginRight="20sp"
-        android:textSize="30sp"
-        android:textColor="@color/black"
-        android:text="/" />
+        android:text="/"
+        android:textColor="@color/orange"
+        android:textSize="30sp" />
 
     <Button
         android:id="@+id/multiply"
-        android:layout_below="@+id/divide"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5sp"
+        android:layout_below="@+id/divide"
         android:layout_marginLeft="315sp"
+        android:layout_marginTop="5sp"
         android:layout_marginRight="20sp"
-        android:textSize="30sp"
-        android:textColor="@color/black"
-        android:text="*" />
+        android:text="*"
+        android:textColor="@color/orange"
+        android:textSize="30sp" />
 
     <Button
         android:id="@+id/minus"
@@ -105,7 +105,7 @@
         android:layout_marginLeft="315sp"
         android:layout_marginRight="20sp"
         android:textSize="30sp"
-        android:textColor="@color/black"
+        android:textColor="@color/orange"
         android:text="-" />
 
     <Button
@@ -117,7 +117,7 @@
         android:layout_marginLeft="315sp"
         android:layout_marginRight="20sp"
         android:textSize="30sp"
-        android:textColor="@color/black"
+        android:textColor="@color/orange"
         android:text="+" />
 
     <Button
@@ -129,7 +129,7 @@
         android:layout_marginLeft="315sp"
         android:layout_marginRight="20sp"
         android:textSize="30sp"
-        android:textColor="@color/black"
+        android:textColor="@color/orange"
         android:text="=" />
 
     //
@@ -145,7 +145,7 @@
         android:layout_marginTop="5sp"
         android:layout_marginRight="310sp"
         android:text="7"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="30sp" />
 
     <Button
@@ -157,7 +157,7 @@
         android:layout_marginLeft="20sp"
         android:layout_marginRight="310sp"
         android:textSize="30sp"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:text="4" />
 
     <Button
@@ -169,7 +169,7 @@
         android:layout_marginLeft="20sp"
         android:layout_marginRight="310sp"
         android:textSize="30sp"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:text="1" />
 
     <Button
@@ -181,7 +181,7 @@
         android:layout_marginTop="5sp"
         android:layout_marginRight="210sp"
         android:text="0"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="30sp" />
 
     //
@@ -197,7 +197,7 @@
         android:layout_marginTop="5sp"
         android:layout_marginRight="210sp"
         android:text="8"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="30sp" />
 
     <Button
@@ -209,7 +209,7 @@
         android:layout_marginTop="5sp"
         android:layout_marginRight="210sp"
         android:text="5"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="30sp" />
 
     <Button
@@ -221,7 +221,7 @@
         android:layout_marginTop="5sp"
         android:layout_marginRight="210sp"
         android:text="2"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="30sp" />
 
     //
@@ -237,7 +237,7 @@
         android:layout_marginTop="5sp"
         android:layout_marginRight="110sp"
         android:text="9"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="30sp" />
 
     <Button
@@ -249,7 +249,7 @@
         android:layout_marginTop="5sp"
         android:layout_marginRight="110sp"
         android:text="6"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="30sp" />
 
     <Button
@@ -261,7 +261,7 @@
         android:layout_marginTop="5sp"
         android:layout_marginRight="110sp"
         android:text="3"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="30sp" />
 
     <Button
@@ -273,7 +273,7 @@
         android:layout_marginTop="5sp"
         android:layout_marginRight="110sp"
         android:text=","
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="30sp" />
 
 </RelativeLayout>
