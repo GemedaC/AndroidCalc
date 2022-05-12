@@ -1,11 +1,12 @@
 package com.example.androidcalculator;
 
 import android.app.Activity;
+import android.icu.number.Precision;
 
 public class CalculatorLogic {
 
-    private int firstArgument;
-    private int secondArgument;
+    private float firstArgument;
+    private float secondArgument;
     private int actionSelected;
     private State state;
     private StringBuilder inputStr = new StringBuilder();
@@ -36,12 +37,10 @@ public class CalculatorLogic {
             inputStr.setLength(0);
         }
 
-        if (inputStr.length() < 9) {
+        if (inputStr.length() < 6) {
             switch (buttonId) {
                 case R.id.zero:
-                    if (inputStr.length() != 0) {
-                        inputStr.append("0");
-                    }
+                    inputStr.append("0");
                     break;
                 case R.id.one:
                     inputStr.append("1");
@@ -70,6 +69,8 @@ public class CalculatorLogic {
                 case R.id.nine:
                     inputStr.append("9");
                     break;
+                case R.id.comma:
+                    inputStr.append(".");
             }
         }
     }
@@ -89,8 +90,14 @@ public class CalculatorLogic {
                     inputStr.setLength(0);
                     break;
                 case R.id.division:
-                    inputStr.append(firstArgument / secondArgument);
-                    break;
+                    if (secondArgument == 0) {
+                        inputStr.append("Ошибка");
+                        break;
+                    }
+                    else {
+                        inputStr.append(firstArgument / secondArgument);
+                        break;
+                    }
                 case R.id.multiply:
                     inputStr.append(firstArgument * secondArgument);
                     break;
@@ -104,24 +111,24 @@ public class CalculatorLogic {
         }
 
         /*
-
-        else if (actionId == R.id.division100 && state == State.secondArgumentInput) {
+        else if (actionId == R.id.division100 && state == State.firstArgumentInput) {
+            state = State.resultShow;
+            inputStr.setLength(0);
             switch (actionSelected) {
                 case R.id.division100:
-                    inputStr.append(secondArgument = Integer.parseInt(inputStr.toString()) / 100);
+                    inputStr.append(firstArgument/100);
                     break;
             }
         }
 
-        else if (actionId == R.id.signChange && state == State.secondArgumentInput) {
+        else if (actionId == R.id.signChange && state == State.resultShow) {
             switch (actionSelected) {
                 case R.id.signChange:
                     inputStr.append(secondArgument = Integer.parseInt(inputStr.toString()) * -1);
                     break;
             }
         }
-
-         */
+        */
 
         else if (inputStr.length() > 0 && state == State.firstArgumentInput) {
             firstArgument = Integer.parseInt(inputStr.toString());
