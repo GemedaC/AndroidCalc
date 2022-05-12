@@ -4,8 +4,8 @@ import android.app.Activity;
 
 public class CalculatorLogic {
 
-    private float firstArgument;
-    private float secondArgument;
+    private int firstArgument;
+    private int secondArgument;
     private int actionSelected;
     private State state;
     private StringBuilder inputStr = new StringBuilder();

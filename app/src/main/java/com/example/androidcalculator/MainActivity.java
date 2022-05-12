@@ -83,6 +83,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 calculator.onActionPressed(v.getId());
+                answer.setText(calculator.getText());
             }
         };
 
